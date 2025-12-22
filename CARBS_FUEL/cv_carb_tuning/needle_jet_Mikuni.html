@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Final//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML> 
+<HEAD><TITLE> Project Name needle_jet_Mikuni </TITLE>
+
+<style type="text/css">
+<!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 17px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 30px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.allft {text-align:left;}
+.alcnt {text-align:center;}
+.alrgt {text-align:right;}
+.aljst {text-align:justify;}
+-->
+</style>
+</HEAD> 
+
+<BODY BGCOLOR="#fffff7" ALINK="#ff00ff" LINK="#0000ff" VLINK="#ff0000"
+  STYLE="height:100%; width:100%;">
+
+<div id=OObj1 STYLE="position:absolute;left:7px;top:12px;width:787px;height:473px;z-index:1;visibility:visible;">
+<span id=GObj1>
+<html><head><style><!----></style><title>needle jet, emulsion tube, mikuni, keihin, carburetor, troubleshoot</title><meta name="Microsoft Border" content="b, default"></head><body BGCOLOR="#FFFFFF" background="./cadedd3.jpg"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><a name="home"><font face="Arial"><img SRC="./logo.gif" WIDTH="214" HEIGHT="41"><img SRC="./logo2.gif" WIDTH="273" HEIGHT="14"><br clear></font></a><font face="Arial"><i><a name="home" href="#Needle Jets, worn"><br></a><big><big><strong><big>Emulsion Tubes, Mikuni:&nbsp; </big>Worn needle jet orifice</strong></big></big></i></font></p><div align="center"><center><table border="1" width="895" cellpadding="10" bgcolor="#C0C0C0" height="500">  <tr>    <td width="143"><p align="center"><font face="Arial"><img src="./emuwr3.jpg" alt="emuwr3.jpg (9351 bytes)" WIDTH="200" HEIGHT="200"></font></td>    <td width="722" colspan="5" height="245"><font face="Arial" size="2">This is a picture of the <em><strong>needle    jet</strong></em> area of an <em><strong>emulsion tube</strong></em> from a stock 38mm CV    Mikuni carb as installed on Ducati,&nbsp; Yamaha TDM/TRX 850, YZF750, FZR/YZF1000, etc..<br>    It has approximately ~5000 miles or&nbsp; 8000k usage.<br>    Notice that the center hole is noticeably worn at the &quot;V&quot;, the 12 o'clock    position, which would be towards the engine, as installed in the carburetor.<br>    This causes 2 conditions. First, it allows more fuel to enter the carburetor, as in using    a needle with a small base diameter AND the fuel that enters the carb - it enters in    larger droplets, resulting in poor combustion.<br>    We carefully check <em><strong>needle jet</strong></em> condition on the vehicles when we    create and install carb recalibration kits.<br>    If you install a kit and it is much too rich at low rpm, and lowering the fuel level 1mm    doesn't fix it, check the <em><strong>needle jets</strong></em> for any wear - it's not    uncommon.<br>      <b>Additional:</b>&nbsp; Eventually, the carb body, where it holds the      slide from rattling back and forth will wear out - allowing the slide to      rattle and bang the needle into the needle jet orifice - causing accelerated      wear.<br>      Example: The original needle jet lasted 5,000 miles. After replacing the      worn emulsion tube / needle jet, they only lasted 3,000 miles or less.      That's because the slide guide slot in the carb body is worn - not because      of the emulsion tube or needle is bad.<br>    </font></td>  </tr>  <tr></span>
+</div>
+
+<SCRIPT language="JavaScript" type="text/javascript"> 
+//<!-- 
+var isNav4 = false, isIE4 = false;
+var cmx = 0, cmy = 0;
+ob    = new Array();
+obRef = new Array();
+Molst= new Array();
+if (navigator.appVersion.charAt(0) >= "3.2") {
+if (navigator.appName == "Netscape") {
+  isNav4 = true;
+  window.captureEvents(Event.MOUSEMOVE);
+  window.onmousemove = NNmouseMove;
+  }
+else if (navigator.appVersion.indexOf("MSIE") != -1) {
+  isIE4 = true;
+  window.document.onmousemove = IEmouseMove;
+  }
+}
+function IEmouseMove() {
+  cmx = window.event.clientX + document.body.scrollLeft;
+  cmy = window.event.clientY + document.body.scrollTop;
+  if(MoLNo > 0) MoOvrTst();
+}
+function NNmouseMove(e) {
+  cmx = e.pageX;
+  cmy = e.pageY;
+  if(MoLNo > 0) MoOvrTst();
+}
+function MoOvrTst() {
+for(i=0; i < MoLNo; i++) {
+  Cobj = Molst[i];
+  if(ob[Cobj].flg & 512) {
+  if(MouseOver() == 1) {
+    if(ob[Cobj].flg & 128) setVisibility("visible");
+    else                   setVisibility("hidden");
+  }
+  else {
+    if(ob[Cobj].flg & 256) setVisibility("visible");
+    else                   setVisibility( "hidden");
+  }}
+}}
+
+function MouseOver() {
+  if ( cmx >= ob[Cobj].left && cmx <= ob[Cobj].right && cmy >= ob[Cobj].top && cmy <= ob[Cobj].bottom) return 1;
+  return 0;
+}
+
+function setVisibility(code) {
+  if(ob[Cobj].flg & 1024) {
+    for(i = 0; i < ob[Cobj].gsz; i++)
+      ob[ob[Cobj].grp[i]].style.visibility = code;
+  }
+  else {
+    ob[Cobj].style.visibility = code;
+} }
+
+var MoLNo = 0;
+//--> 
+</SCRIPT> 
+
+<script for="window" event="onload" language="JavaScript" type="text/javascript">
+//<!-- 
+//  This script executes when the page has loaded
+for(i=0; i < MoLNo; i++) {
+    if(ob[Molst[i]].flg & 64) ob[Molst[i]].style.visibility = "visible";
+    else	ob[Molst[i]].style.visibility = "hidden";
+}
+
+//--> 
+</SCRIPT> 
+
+</BODY> 
+</HTML> 

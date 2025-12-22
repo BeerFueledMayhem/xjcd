@@ -1,0 +1,21 @@
+##
+##  CrossRef Configuration
+##
+
+########  Database Configuration ########
+##
+
+##  Specify the database to use (default is Derby)
+##  Only Derby and MySQL are supported currently
+DBDRIVER = derby
+
+##  Location and name of the database (ignored if Derby)
+DBURL = localhost
+DBNAME = yamaha
+
+##  Athentication credentials (ignored if Derby)
+DBUSER = isaac
+DBPASS = testpass
+
+##
+#########################################

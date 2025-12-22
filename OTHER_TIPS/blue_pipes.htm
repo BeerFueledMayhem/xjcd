@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Final//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML> 
+<HEAD><TITLE> Project Name Blue Pipes </TITLE>
+<META NAME="Description" CONTENT="Interactive Animation">
+<META NAME="Keywords" CONTENT="IMS, Web Engine">
+<META NAME="GENERATOR" CONTENT="Virtual Mechanics IMS Studio">
+<style type="text/css">
+<!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 17px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 30px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.allft {text-align:left;}
+.alcnt {text-align:center;}
+.alrgt {text-align:right;}
+.aljst {text-align:justify;}
+-->
+</style>
+</HEAD> 
+
+<BODY BGCOLOR="#fffff7" ALINK="#ff00ff" LINK="#0000ff" VLINK="#ff0000"
+  STYLE="height:100%; width:100%;">
+
+<div style="position:absolute;visibility:hidden;">Created with IMS Web Dwarf from <a href="wwww.VirtualMechanics.com">Virtual Mechanics Inc.</a></div>
+
+<div id=OObj1 STYLE="position:absolute;left:8px;top:5px;width:785px;height:499px;z-index:1;visibility:visible;">
+<span id=GObj1>
+<font face="Times New Roman" class="fsx05" color="#000000">  --------------------------------------------------------------------------------<br>
+<br>
+<br>
+Fix, Prevent or Disguise Blue Exhaust Pipes <br>
+-- May 5, 2000 --<br>
+<br>
+<br>
+<br>
+High performance Harley-Davidson engines develop large amounts of heat, causing blueing and discoloration of the exhaust system. There are several methods of preventing or disguising this including heat shields and exhaust coatings. <br>
+<br>
+Exhaust pipes are almost always chrome plated. The chrome serves as a protection against rust, abrasion, and the occasional oil spray. While chrome is a uniquely inert coating, even the best plating job will yellow, gold, and then blue when subjected to extreme temperature that can be generated in a high-performance engine. An out of tune engine can cause blueing far down the pipe where the exhaust would usually be cooler if the air-fuel mixture is overly rich. A rich mixture will ignite at the hot spot inside the Harley's muffler where a glowing baffle will cause a flame to hover and a large blue spot will appear on the outside of the exhaust pipe. Almost every newer bike will blue the header pipe for a few inches from the head in the first several hundred miles. <br>
+<br>
+Once discoloration occurs it can be removed using commercially available products like Blue-away (CCI#12-415) or Blue-Buster (CCI#35-125). These products are mildly abrasive, so after several applications the mirror finish of the chrome becomes satin-like, so the best way to deal with blueing is to prevent it or cover it up. To prevent exhaust pipe blueing many folks claim coating the inside of the header by spraying high heat VHT paint into it will prevent or reduce blueing. Another way is to coat a piece of rag with oil and swab the inside of the pipe header with it. This supposedly will cause a carbon layer to form and insulate the metal from some of the heat. The preferred way to treat pipes is to coat the inside with a ceramic based liquid like Dyno Kote (CCI#11-499), or Blue Shield (DS#KR005) made by the folks who make Kreem Tank Protectant. Both these are recommended for clean new pipes, and a good roughing with a wire brush internally to remove any flash rust and a spray with a good solvent to remove any oil is recommended. The Dyno Kote kit comes with a brush and solvent. After applying the coating as per the directions, the pipes should be baked so the coating cures completely. A regular household oven works fine if you let the ends of the pipes hang out of the door and bake at 150 degrees for about 20 minutes, or at the temperature and time specified. I have seen pipes coated this way cut in half as a demonstration and the coating stays intact. The ceramic coating is highly insulative, much like the ceramic tiles on the space shuttle and will insulate the metal pipe from the hot exhaust gas. <br>
+<br>
+Another way of dealing with the exhaust blueing problem is to cover it up with exhaust shields. Most commercial exhaust pipes are available with optional heat shields, and universal heat shields can be used to cover odd shapes and spots on custom pipes. Some pipes like Vance & Hines use a 220 degree wraparound shield that is form fit to the pipe and is very inconspicuous. Recently HardChrome introduced a new line of large diameter pipes that are double walled, with a smaller pipe inside a large outer pipe which should eliminate discoloration as well. Some manufacturers also coat their pipes internally from the factory like the Hooker and Strader lines. <br>
+<br>
+Whatever the cause, exhaust pipe blueing is unsightly and detracts from an otherwise shiny bike. Prevent it, cover it, or remove it, and your bike will look it's shiny best! <br>
+<br>
+<br>
+</font></span>
+</div>
+
+<SCRIPT language="JavaScript" type="text/javascript"> 
+//<!-- 
+var isNav4 = false, isIE4 = false;
+var cmx = 0, cmy = 0;
+ob    = new Array();
+obRef = new Array();
+Molst= new Array();
+if (navigator.appVersion.charAt(0) >= "3.2") {
+if (navigator.appName == "Netscape") {
+  isNav4 = true;
+  window.captureEvents(Event.MOUSEMOVE);
+  window.onmousemove = NNmouseMove;
+  }
+else if (navigator.appVersion.indexOf("MSIE") != -1) {
+  isIE4 = true;
+  window.document.onmousemove = IEmouseMove;
+  }
+}
+function IEmouseMove() {
+  cmx = window.event.clientX + document.body.scrollLeft;
+  cmy = window.event.clientY + document.body.scrollTop;
+  if(MoLNo > 0) MoOvrTst();
+}
+function NNmouseMove(e) {
+  cmx = e.pageX;
+  cmy = e.pageY;
+  if(MoLNo > 0) MoOvrTst();
+}
+function MoOvrTst() {
+for(i=0; i < MoLNo; i++) {
+  Cobj = Molst[i];
+  if(ob[Cobj].flg & 512) {
+  if(MouseOver() == 1) {
+    if(ob[Cobj].flg & 128) setVisibility("visible");
+    else                   setVisibility("hidden");
+  }
+  else {
+    if(ob[Cobj].flg & 256) setVisibility("visible");
+    else                   setVisibility( "hidden");
+  }}
+}}
+
+function MouseOver() {
+  if ( cmx >= ob[Cobj].left && cmx <= ob[Cobj].right && cmy >= ob[Cobj].top && cmy <= ob[Cobj].bottom) return 1;
+  return 0;
+}
+
+function setVisibility(code) {
+  if(ob[Cobj].flg & 1024) {
+    for(i = 0; i < ob[Cobj].gsz; i++)
+      ob[ob[Cobj].grp[i]].style.visibility = code;
+  }
+  else {
+    ob[Cobj].style.visibility = code;
+} }
+
+var MoLNo = 0;
+//--> 
+</SCRIPT> 
+
+<script for="window" event="onload" language="JavaScript" type="text/javascript">
+//<!-- 
+//  This script executes when the page has loaded
+for(i=0; i < MoLNo; i++) {
+    if(ob[Molst[i]].flg & 64) ob[Molst[i]].style.visibility = "visible";
+    else	ob[Molst[i]].style.visibility = "hidden";
+}
+
+//--> 
+</SCRIPT> 
+
+</BODY> 
+</HTML> 

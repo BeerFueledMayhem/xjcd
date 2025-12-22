@@ -1,0 +1,52 @@
+
+Changelog for Yamaha CrossRef versions.
+
+== VERSION 0.2 CHANGES ==
+
+new/modified features:
+- save scrollpane positions and selections
+- save user-modified column widths
+- save sorting state for each page in history
+- fast-find for bike/part columns (select grid, then press letter/number)
+- added space between "Search:" label and search field
+- changed "PART" search label to "PART#"
+- changed "GRID" search label to "PAGE"
+- added "snap to selection" button for grid selections
+- double-click for any part of a row, not just first
+- fix code search issue (now shows bikes matching code instead of parts)
+- wildcard bike search (use '*' at beginning or end of bike model search string)
+- improved toolbar button handling when transitioning from main to notes tabs
+- added WAIT cursor change during database lookups and print requests
+- made starting column widths better
+- save user preferences between sessions (column widths, order)
+- right-click cut/copy/paste text
+- right-click print/save from anywhere
+- right-click grid-selection/grid-cell copy
+
+
+bug fixes:
+- fixed part description in part info table
+- fixed copy-to-notes behavior
+- provided good database state in the zip archive
+- fixed right-click behavior over text fields so text selection remains visible
+- fixed right-click selection and action processing on Windows
+- fixed mouse wheel handling (forward through glass pane)
+- fixed "No suitable driver" problem in Windows applet
+
+
+== TO DO ==
+
+
+testing to be completed:
+- test Derby for Java 1.1 compliance (for mac classic users)
+
+outstanding new/modified features:
+1. conformed to 8.3 file naming (as much as possible)  -- done in development version
+2. make information table more attractive/usable
+3. saveable bookmarks (mosty a UI problem, otherwise easy)
+4. tabbed browsing
+5. accumulate searches until cleared
+
+outstanding bugs:
+1. fix combobox mouse behavior (doesn't show selections on mouse-over - windows/linux only)
+2. fix JFreeReports save features

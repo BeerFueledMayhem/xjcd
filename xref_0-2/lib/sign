@@ -1,0 +1,1 @@
+jarsigner -keystore ~/serialnumbers/keystore -storepass j4rs1gn -keypass j4rs1gn xref-02.jar jarsigner

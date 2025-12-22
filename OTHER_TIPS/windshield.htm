@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Final//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML> 
+<HEAD><TITLE> Project Name Making a Replacement Fairing Windshield </TITLE>
+<META NAME="Description" CONTENT="Interactive Animation">
+<META NAME="Keywords" CONTENT="IMS, Web Engine">
+<META NAME="GENERATOR" CONTENT="Virtual Mechanics IMS Studio">
+<style type="text/css">
+<!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 17px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 30px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.allft {text-align:left;}
+.alcnt {text-align:center;}
+.alrgt {text-align:right;}
+.aljst {text-align:justify;}
+-->
+</style>
+</HEAD> 
+
+<BODY BGCOLOR="#fffff7" ALINK="#ff00ff" LINK="#0000ff" VLINK="#ff0000"
+  STYLE="height:100%; width:100%;">
+
+<div style="position:absolute;visibility:hidden;">Created with IMS Web Dwarf from <a href="wwww.VirtualMechanics.com">Virtual Mechanics Inc.</a></div>
+
+<div id=OObj1 STYLE="position:absolute;left:11px;top:34px;width:781px;height:491px;z-index:1;visibility:visible;">
+<span id=GObj1>
+<font face="Times New Roman" class="fsx05" color="#000000">I made my own replacement, using the old windshield as a form. I carefully glued the pieces together, duct taped over the mounting holes, and around the perimeter, and filled it with layers of plaster of paris, with wood sticks interspersed for reinforcement. After letting the plaster set for 24 hours, I carefully removed the duct tape, inverted the whole thing onto an 8"x8" baking pan, and removed the windshield. Some gentle sanding was required to remove the bumps from the mounting holes and the glue joint.<br>
+<br>
+Last time, I picked Lexan for the new shield. Pricey, but bulletproof. I think the piece required was about 15" x 17". I placed the whole thing in an oven pre-heated to 150 degrees F., the Lexan carefully centred on the mold.<br>
+<br>
+It is absolutely paramount to heat the lexan slowly - 5 degrees over 5 minutes or longer. Steam escaping from the plaster mold will cool the underside of the Lexan, and too fast a heating speed will actually boil the plastic. Don't attempt to force the Lexan down over the mold -- you'll only mar the finish -- let it slump into position by gravity. Line the bottom of the oven with tin foil to catch any drips of plastic (dripping means you heated it too fast and it's ruined -- start over.)<br>
+<br>
+The slumping process will take 5 or 6 hours of constant attention, and a terminal temperature of around 360 F. When it's done, turn the oven off, and open the door, allowing it to cool. Remove the new windshield carefully (Lexan's very tough, and will spring back after considerable bending, but if you want to make another, the plaster is very fragile, especially after heating. 2 windshields max and it's time for a new mold)<br>
+<br>
+The lexan cuts pretty well with a scroll saw on low speed with a 10 or 12 tpi blade. Use the old shield and a magic marker to trace out the cut line, cut a little oversize, and sand down to the line with a 120 belt on a belt sander. Mark the holes the same way, and drill with a brad point wood drill bit. Ease the edges of the holes with a dremel tool. These sanding operations will prevent future cracking by heat-sealing any microfissures caused by cutting. Alternatively, the manufacturer advises wiping the edges with Methyl Keytone for the same effect.<br>
+<br>
+It took me a few trys to get it right, but it worked out well in the end. Total cost per shield worked out to around US$25.00<br>
+<br>
+tafn<br>
+<br>
+dv<br>
+<br>
+<br>
+<br>
+<br>
+</font></span>
+</div>
+
+<SCRIPT language="JavaScript" type="text/javascript"> 
+//<!-- 
+var isNav4 = false, isIE4 = false;
+var cmx = 0, cmy = 0;
+ob    = new Array();
+obRef = new Array();
+Molst= new Array();
+if (navigator.appVersion.charAt(0) >= "3.2") {
+if (navigator.appName == "Netscape") {
+  isNav4 = true;
+  window.captureEvents(Event.MOUSEMOVE);
+  window.onmousemove = NNmouseMove;
+  }
+else if (navigator.appVersion.indexOf("MSIE") != -1) {
+  isIE4 = true;
+  window.document.onmousemove = IEmouseMove;
+  }
+}
+function IEmouseMove() {
+  cmx = window.event.clientX + document.body.scrollLeft;
+  cmy = window.event.clientY + document.body.scrollTop;
+  if(MoLNo > 0) MoOvrTst();
+}
+function NNmouseMove(e) {
+  cmx = e.pageX;
+  cmy = e.pageY;
+  if(MoLNo > 0) MoOvrTst();
+}
+function MoOvrTst() {
+for(i=0; i < MoLNo; i++) {
+  Cobj = Molst[i];
+  if(ob[Cobj].flg & 512) {
+  if(MouseOver() == 1) {
+    if(ob[Cobj].flg & 128) setVisibility("visible");
+    else                   setVisibility("hidden");
+  }
+  else {
+    if(ob[Cobj].flg & 256) setVisibility("visible");
+    else                   setVisibility( "hidden");
+  }}
+}}
+
+function MouseOver() {
+  if ( cmx >= ob[Cobj].left && cmx <= ob[Cobj].right && cmy >= ob[Cobj].top && cmy <= ob[Cobj].bottom) return 1;
+  return 0;
+}
+
+function setVisibility(code) {
+  if(ob[Cobj].flg & 1024) {
+    for(i = 0; i < ob[Cobj].gsz; i++)
+      ob[ob[Cobj].grp[i]].style.visibility = code;
+  }
+  else {
+    ob[Cobj].style.visibility = code;
+} }
+
+var MoLNo = 0;
+//--> 
+</SCRIPT> 
+
+<script for="window" event="onload" language="JavaScript" type="text/javascript">
+//<!-- 
+//  This script executes when the page has loaded
+for(i=0; i < MoLNo; i++) {
+    if(ob[Molst[i]].flg & 64) ob[Molst[i]].style.visibility = "visible";
+    else	ob[Molst[i]].style.visibility = "hidden";
+}
+
+//--> 
+</SCRIPT> 
+
+</BODY> 
+</HTML> 

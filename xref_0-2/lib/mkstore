@@ -1,0 +1,1 @@
+keytool -genkey -alias jarsigner -keystore ~/serialnumbers/keystore -keypass j4rs1gn -dname "cn=Isaac Councill" -storepass j4rs1gn

@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Final//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML> 
+<HEAD><TITLE> Project Name building and using a yics tool.htm </TITLE>
+<style type="text/css">
+<!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 17px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 30px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.allft {text-align:left;}
+.alcnt {text-align:center;}
+.alrgt {text-align:right;}
+.aljst {text-align:justify;}
+-->
+</style>
+</HEAD> 
+
+<BODY BGCOLOR="#fffff7" ALINK="#ff00ff" LINK="#0000ff" VLINK="#ff0000"
+  STYLE="height:100%; width:100%;">
+
+
+<div id=OObj1 STYLE="position:absolute;left:7px;top:370px;width:785px;height:349px;z-index:1;visibility:visible;">
+<span id=GObj1>
+
+<font size=2 face=Arial><span style='font-size:10.0pt; mso-bidi-font-family:Arial'><span style="mso-spacerun: yes">  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./Carb_index.htm">  BACK to the Carburetor Index</a></span></font> <br>
+
+
+<font face="Times New Roman" class="fsx05" color="#000000">The later models of Yamaha (1982 & newer) use a YICS ( Yamaha Induction Control System) which is basically a vacuum balancing system in the intake manifold. A gallery is located just below the intake passages connecting all four intakes together via small air passages (approx. 1/8" ) the gallery itself is approx. 3/8" in diameter and 16" long on the 1100's. ( one of these days I'll convert to metric )<br>
+<br>
+To balance the carbs and set the idle mixtures properly the YICS must be rendered deactive so a true vacuum can be established. A special tool is required to seal the YICS passages while this adjusting is going on. The tool incorporates three rubber hose sections to act as seals, they are located in such a way as to isolate the passages from each other. To use just remove the gallery plug, it's located on the left side of the engine just below the carburetor inlets, should be 12mm. Slide the tool all the way in until the fender washer come in contact with the tube. Now while holding the bent part of the treaded rod tighten the wing nut till firm. Hook up your gauges or carb sticks. Start the engine and allow to warm up. It is normal for the engine to idle slower than normal so you may have to increase the idle speed to 1000 - 1200 rpm. Now proceed to adjust the idle mixture on each carb as described <A HREF="./syncronizing_carbs.htm" TITLE="Syncronizing your carbs" alt="Building and using a yics tool"></font><font face="Times New Roman" class="fsx05" color="#ff0000">HERE  </A> </font><font face="Times New Roman" class="fsx05" color="#000000">. (If starting from scratch, they should be approx. 1- 1/2 turns out to start). Sync. the carbs for even intake vacuum balance. Shut down and remove the gauges & YICS tool tighten the gallery plug to 100 inch pounds ( firm but not gorilla ) reset the idle speed and your finished!! <br>
+<br>
+How it works, tightening the wing nut squashed the rubber hose sections and causes them to grow in diameter sealing against the gallery walls. The section closest to the wing nut is positioned directly under the #1 cylinder passage sealing this on from #2,3&4 the second seal is set between #2&3 isolating these two and the end seal is between #3&4 so intake vacuum is now independent and not shared by the other cylinders. <br>
+<br>
+BTW the YICS system helps the cold start back fire that the non-Yics machines are prone to. You can achieve similar results on the older machines by connecting the carbs together. just get some rubber gas line and two tee connectors remove the rubber plugs from the balance tubes and hook the four carbs together using the tees on #2&3 and the rubber hose. You'll notice a slightly faster and smoother idle. <br>
+<br>
+<br>
+<br>
+--------------------------------------------------------------------------------<br>
+<br>
+</font></span>
+</div>
+<div id=OObj2 STYLE="position:absolute;left:38px;top:2px;width:690px;height:346px;z-index:2;visibility:visible;">
+<img name="GObj2" Align=Top SRC="yicstooldrawing.jpg" alt="" WIDTH=690 HEIGHT=346 border=0>
+</div>
+
+<SCRIPT language="JavaScript" type="text/javascript"> 
+//<!-- 
+var isNav4 = false, isIE4 = false;
+var cmx = 0, cmy = 0;
+ob    = new Array();
+obRef = new Array();
+Molst= new Array();
+if (navigator.appVersion.charAt(0) >= "3.2") {
+if (navigator.appName == "Netscape") {
+  isNav4 = true;
+  window.captureEvents(Event.MOUSEMOVE);
+  window.onmousemove = NNmouseMove;
+  }
+else if (navigator.appVersion.indexOf("MSIE") != -1) {
+  isIE4 = true;
+  window.document.onmousemove = IEmouseMove;
+  }
+}
+function IEmouseMove() {
+  cmx = window.event.clientX + document.body.scrollLeft;
+  cmy = window.event.clientY + document.body.scrollTop;
+  if(MoLNo > 0) MoOvrTst();
+}
+function NNmouseMove(e) {
+  cmx = e.pageX;
+  cmy = e.pageY;
+  if(MoLNo > 0) MoOvrTst();
+}
+function MoOvrTst() {
+for(i=0; i < MoLNo; i++) {
+  Cobj = Molst[i];
+  if(ob[Cobj].flg & 512) {
+  if(MouseOver() == 1) {
+    if(ob[Cobj].flg & 128) setVisibility("visible");
+    else                   setVisibility("hidden");
+  }
+  else {
+    if(ob[Cobj].flg & 256) setVisibility("visible");
+    else                   setVisibility( "hidden");
+  }}
+}}
+
+function MouseOver() {
+  if ( cmx >= ob[Cobj].left && cmx <= ob[Cobj].right && cmy >= ob[Cobj].top && cmy <= ob[Cobj].bottom) return 1;
+  return 0;
+}
+
+function setVisibility(code) {
+  if(ob[Cobj].flg & 1024) {
+    for(i = 0; i < ob[Cobj].gsz; i++)
+      ob[ob[Cobj].grp[i]].style.visibility = code;
+  }
+  else {
+    ob[Cobj].style.visibility = code;
+} }
+
+var MoLNo = 0;
+//--> 
+</SCRIPT> 
+
+<script for="window" event="onload" language="JavaScript" type="text/javascript">
+//<!-- 
+//  This script executes when the page has loaded
+for(i=0; i < MoLNo; i++) {
+    if(ob[Molst[i]].flg & 64) ob[Molst[i]].style.visibility = "visible";
+    else	ob[Molst[i]].style.visibility = "hidden";
+}
+
+//--> 
+</SCRIPT> 
+
+</BODY> 
+</HTML> 

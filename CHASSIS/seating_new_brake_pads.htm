@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Final//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML> 
+<HEAD><TITLE> Project Name seating new brake pads </TITLE>
+<META NAME="Description" CONTENT="Interactive Animation">
+<META NAME="Keywords" CONTENT="IMS, Web Engine">
+<META NAME="GENERATOR" CONTENT="Virtual Mechanics IMS Studio">
+<style type="text/css">
+<!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 17px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 30px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.allft {text-align:left;}
+.alcnt {text-align:center;}
+.alrgt {text-align:right;}
+.aljst {text-align:justify;}
+-->
+</style>
+</HEAD> 
+
+<BODY BGCOLOR="#fffff7" ALINK="#ff00ff" LINK="#0000ff" VLINK="#ff0000"
+  STYLE="height:100%; width:100%;">
+
+<div style="position:absolute;visibility:hidden;">Created with IMS Web Dwarf from <a href="wwww.VirtualMechanics.com">Virtual Mechanics Inc.</a></div>
+
+<div id=OObj1 STYLE="position:absolute;left:6px;top:5px;width:835px;height:345px;z-index:1;visibility:visible;">
+<span id=GObj1>
+<font face="Times New Roman" class="fsx05" color="#000000">  <br>
+<br>
+The Brakes That Won't Stop                                           10/27/2000<br>
+<br>
+<br>
+I get alot of e-mails about brakes that don't stop well after the rotors, pads, or brakes have been replaced. In some cases the owners are contemplating replacing the master cylinder with a larger bore. <br>
+<br>
+I think you are on the wrong track! I'm making some assumptions here, but my guess is that you don't have mushy brakes, but a hard lever or pedal that doesn't slow the bike no matter how hard you squeeze. <br>
+<br>
+Going from a 5/8 to a 3/4 master cylinder will make the lever and pedal pressure higher, not lower. You are probably fine with what you have, but because you installed calipers with hard pads on used (or new)rotors, they are not getting good seating contact. <br>
+<br>
+Before you do anything else, try this. First make sure the rotors are clean, no leftover fluid on them from bleeding. Spray them off with some brake clean or wipe them with alcohol. <br>
+<br>
+Next, take the bike out on a straight road with no traffic and seat the pads. Do this by doing 10 stops from 20 to 0 mph (don't lock 'em up!) and then 10 stops from 40 to 0 mph. <br>
+<br>
+Use only front or rear to make sure each has a chance to seat. You should feel the pads seating in, by the end they'll feel like power brakes! <br>
+<br>
+This method is recommended by LRB Racing brakes and should seat in pads properly. <br>
+<br>
+<br>
+<br>
+</font></span>
+</div>
+
+<SCRIPT language="JavaScript" type="text/javascript"> 
+//<!-- 
+var isNav4 = false, isIE4 = false;
+var cmx = 0, cmy = 0;
+ob    = new Array();
+obRef = new Array();
+Molst= new Array();
+if (navigator.appVersion.charAt(0) >= "3.2") {
+if (navigator.appName == "Netscape") {
+  isNav4 = true;
+  window.captureEvents(Event.MOUSEMOVE);
+  window.onmousemove = NNmouseMove;
+  }
+else if (navigator.appVersion.indexOf("MSIE") != -1) {
+  isIE4 = true;
+  window.document.onmousemove = IEmouseMove;
+  }
+}
+function IEmouseMove() {
+  cmx = window.event.clientX + document.body.scrollLeft;
+  cmy = window.event.clientY + document.body.scrollTop;
+  if(MoLNo > 0) MoOvrTst();
+}
+function NNmouseMove(e) {
+  cmx = e.pageX;
+  cmy = e.pageY;
+  if(MoLNo > 0) MoOvrTst();
+}
+function MoOvrTst() {
+for(i=0; i < MoLNo; i++) {
+  Cobj = Molst[i];
+  if(ob[Cobj].flg & 512) {
+  if(MouseOver() == 1) {
+    if(ob[Cobj].flg & 128) setVisibility("visible");
+    else                   setVisibility("hidden");
+  }
+  else {
+    if(ob[Cobj].flg & 256) setVisibility("visible");
+    else                   setVisibility( "hidden");
+  }}
+}}
+
+function MouseOver() {
+  if ( cmx >= ob[Cobj].left && cmx <= ob[Cobj].right && cmy >= ob[Cobj].top && cmy <= ob[Cobj].bottom) return 1;
+  return 0;
+}
+
+function setVisibility(code) {
+  if(ob[Cobj].flg & 1024) {
+    for(i = 0; i < ob[Cobj].gsz; i++)
+      ob[ob[Cobj].grp[i]].style.visibility = code;
+  }
+  else {
+    ob[Cobj].style.visibility = code;
+} }
+
+var MoLNo = 0;
+//--> 
+</SCRIPT> 
+
+<script for="window" event="onload" language="JavaScript" type="text/javascript">
+//<!-- 
+//  This script executes when the page has loaded
+for(i=0; i < MoLNo; i++) {
+    if(ob[Molst[i]].flg & 64) ob[Molst[i]].style.visibility = "visible";
+    else	ob[Molst[i]].style.visibility = "hidden";
+}
+
+//--> 
+</SCRIPT> 
+
+</BODY> 
+</HTML> 

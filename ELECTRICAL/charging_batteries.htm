@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Final//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML> 
+<HEAD><TITLE> Project Name Charging batteries </TITLE>
+<style type="text/css">
+<!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 17px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 30px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.allft {text-align:left;}
+.alcnt {text-align:center;}
+.alrgt {text-align:right;}
+.aljst {text-align:justify;}
+-->
+</style>
+</HEAD> 
+
+<BODY BGCOLOR="#fffff7" ALINK="#ff00ff" LINK="#0000ff" VLINK="#ff0000"
+  STYLE="height:100%; width:100%;">
+
+
+<div id=OObj1 STYLE="position:absolute;left:17px;top:4px;width:801px;height:1995px;z-index:1;visibility:visible;">
+<span id=GObj1>
+<br>
+<font face="Arial" class="fsx05" color="#000000">--------------------------------------------------------------------------------<br>
+<br>
+A bit about charging batteries   -- By Aaron Berg<br>
+<br>
+--------------------------------------------------------------------------------<br>
+<br>
+<br>
+<br>
+Editorial note: [I have an agenda here because I believe that battery charging systems, in general, are far too primitive in this age of high tech. The lack of sophistication both in vehicle charging systems and external chargers causes lead-acid batteries to die too soon. Battery manufacturers have a vested interest in selling new batteries, not in making good charging systems. Fortunately, new vehicle warranties, some lasting 100,000 miles, give vehicle manufacturers a new interest in making batteries last longer. This will (and is starting to) result in new and better battery and charging technology. Just watch.] <br>
+<br>
+<br>
+Fixed voltage chargers: <br>
+<br>
+The perfect fixed voltage charger will present a fixed voltage to the battery. If the battery charge is low, it will draw a lot of current. As the battery charges, the amount of current will decrease. This makes sense intuitively, because a fully charged battery shouldn't "take" current from a fixed voltage. This corresponds to the battery's "internal" voltage growing as it charges and getting close to the charger voltage. In engineering terms, the battery's internal impedance is increasing as it charges. The current (and thus the power going into the battery) drops off exponentially as it reaches the charged voltage. <br>
+<br>
+This has the nasty effect that the first part of charging might go quickly, but as the battery becomes charged, it charges more slowly. A very dead battery might reach 50% charge in 1 hour, 75% in 2 hours, 87% in 4 hours, etc. <br>
+<br>
+You might be thinking that it would be nice if the charging voltage increased at the end, squeezing that last little bit of charge in more quickly. This is a good seque to the next section: <br>
+<br>
+Fixed Current chargers: <br>
+<br>
+One way of thinking about fixed current chargers is that the voltage of the charger is adjusted to keep the amount of current going into the battery constant. When the battery is quite dead, the charger might be at a low voltage (like seven volts for example) as long as the battery is drawing a couple of amps. As the current drops (the battery charges), the charger automatically raises its voltage to keep the same couple of amps flowing. When the battery is fully charged, there must be some mechanism for stopping the charger, other wise the battery would continue to charge, and blow up. So, a "fully charged" voltage is programmed into the charger to tell it when to shut off. <br>
+<br>
+This points out one of the simplicity advantages to a fixed voltage charger (the first example). It doesn't need anything to tell it to stop, it just slows the charging more and more until its just a trickle. <br>
+<br>
+The real world: <br>
+<br>
+The real world battery charger you buy from Sears has a very simple design, and ends up being mostly like a fixed voltage charger, with some of the characteristics of a fixed current charger. <br>
+<br>
+The switch setting on the front of the charger somwhat determines the "maximum" current of the charger. When you start charging a dead battery, the charger pushes this maximum current into the battery, (similar to a fixed current charger). That is to say, the charging voltage drops a bit so the "maximum" current is not exceeded. This is actually a physical characteristic of the transformer, and not due to any "electronics" telling it what to do. In engineering terms, the charger has a finite impedance (internal resistance). <br>
+<br>
+As the battery becomes charged, the charging voltage naturally increases to its "fixed" level. When it reaches its fixed level, the current starts to drop off and it becomes more like a fixed voltage charger. (Again, this occurs naturally due to the characteristics of transformers.) <br>
+<br>
+There is no actual point when the charger changes from "fixed current" to "fixed voltage", the transition is continuous and natural. <br>
+<br>
+<br>
+<br>
+Fully charged voltage, Overcharge voltage, Float voltage, Capacity, and Charge Rate:<br>
+<br>
+Definitions: <br>
+<br>
+Fully charged voltage: The voltage on the battery (after removing surface charge) that the engineers have decided means the battery is fully charged. (Vc) <br>
+<br>
+Overcharge voltage: The voltage that the engineers want you to charge the battery to during charging so that the battery is fully charged when the current drops and the charger is disconnected. (Voc) <br>
+<br>
+Float voltage: The voltage that the engineers have determined will keep the battery at full charge indefinitely with the charger connected. This voltage is between the fully charged voltage and the overcharge voltage. (Vf) <br>
+<br>
+Capacity: A measure of the capacity of the battery, measured in amp-hours, usually determined by a 10 hour discharge rate. For example, if the charged battery will completely discharge if you draw 1.4 amps for 10 hours, its capacity is 14 amp-hours. (C) <br>
+<br>
+Charge Rate: A measure of the current the engineers would like you to do most of the charging at to get maximum performance out of the battery. Typically it is C/10 for bulk charging (Imax), and C/500 (Ioct) for switching to float voltage when the battery is fully charged. <br>
+<br>
+[These definitions are a bit simplified!] <br>
+<br>
+The fancy way to charge: <br>
+<br>
+<br>
+The recommended two-step charging cycle for a lead acid battery: <br>
+<br>
+(This is taken from Horowitz and Hill's seminal work, the Art of electronics) <br>
+<br>
+-Bulk charge at Imax (constant current) until you reach the overcharge voltage (Voc). <br>
+<br>
+-Hold the charging voltage constant at Voc until the current drops to Ioct. <br>
+<br>
+-Drop the voltage to the float voltage (Vf) and hold indefinitely. <br>
+<br>
+<br>
+As you can see, what the engineers recommend is quite a bit more complicated than the charging system in a vehicle or simply attaching a Sears charger. <br>
+<br>
+The upshot of all this is the reason that someone invented the "battery tender." Although I don't know if it follows this charging method completely, it does maintain the float voltage. <br>
+<br>
+A Sears charger is not designed to hold float voltages, and that is why you shouldn't leave them attached for too long on a fully charged battery. (The term "trickle" charger refers to any charger that provides a small current. Although the battery tender is a trickle charger, not all trickle chargers maintain float voltage. They generally use a higher voltage, which, over time, is not as good for the battery as Vf.) <br>
+<br>
+The charging system in your bike is akin to a system that holds Voc for as long as the bike is running. This is the way the system is designed, and is only bad because it somewhat lowers the life expectancy of the battery. It is also the way all cars work. <br>
+<br>
+In the FAQ, I mention overcharging problems in the bike. There, the voltage grows even higher than the bike's designed Voc, and kills the battery even faster. (Thus the common, "I buy a new battery every year" problem.) <br>
+<br>
+<br>
+<br>
+--------------------------------------------------------------------------------<br>
+<br>
+<br>
+ <br>
+<br>
+</font></span>
+</div>
+
+<SCRIPT language="JavaScript" type="text/javascript"> 
+//<!-- 
+var isNav4 = false, isIE4 = false;
+var cmx = 0, cmy = 0;
+ob    = new Array();
+obRef = new Array();
+Molst= new Array();
+if (navigator.appVersion.charAt(0) >= "3.2") {
+if (navigator.appName == "Netscape") {
+  isNav4 = true;
+  window.captureEvents(Event.MOUSEMOVE);
+  window.onmousemove = NNmouseMove;
+  }
+else if (navigator.appVersion.indexOf("MSIE") != -1) {
+  isIE4 = true;
+  window.document.onmousemove = IEmouseMove;
+  }
+}
+function IEmouseMove() {
+  cmx = window.event.clientX + document.body.scrollLeft;
+  cmy = window.event.clientY + document.body.scrollTop;
+  if(MoLNo > 0) MoOvrTst();
+}
+function NNmouseMove(e) {
+  cmx = e.pageX;
+  cmy = e.pageY;
+  if(MoLNo > 0) MoOvrTst();
+}
+function MoOvrTst() {
+for(i=0; i < MoLNo; i++) {
+  Cobj = Molst[i];
+  if(ob[Cobj].flg & 512) {
+  if(MouseOver() == 1) {
+    if(ob[Cobj].flg & 128) setVisibility("visible");
+    else                   setVisibility("hidden");
+  }
+  else {
+    if(ob[Cobj].flg & 256) setVisibility("visible");
+    else                   setVisibility( "hidden");
+  }}
+}}
+
+function MouseOver() {
+  if ( cmx >= ob[Cobj].left && cmx <= ob[Cobj].right && cmy >= ob[Cobj].top && cmy <= ob[Cobj].bottom) return 1;
+  return 0;
+}
+
+function setVisibility(code) {
+  if(ob[Cobj].flg & 1024) {
+    for(i = 0; i < ob[Cobj].gsz; i++)
+      ob[ob[Cobj].grp[i]].style.visibility = code;
+  }
+  else {
+    ob[Cobj].style.visibility = code;
+} }
+
+var MoLNo = 0;
+//--> 
+</SCRIPT> 
+
+<script for="window" event="onload" language="JavaScript" type="text/javascript">
+//<!-- 
+//  This script executes when the page has loaded
+for(i=0; i < MoLNo; i++) {
+    if(ob[Molst[i]].flg & 64) ob[Molst[i]].style.visibility = "visible";
+    else	ob[Molst[i]].style.visibility = "hidden";
+}
+
+//--> 
+</SCRIPT> 
+
+</BODY> 
+</HTML> 

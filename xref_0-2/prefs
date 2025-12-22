@@ -1,0 +1,11 @@
+#PREFERENCES
+#Tue Apr 11 14:18:52 EDT 2006
+PART.order=0<>1<>2<>3
+PART_DESC.names=Part Number<>Description
+BIKE.names=Model<>Year<>Displacement<>Description<>Type
+PART_DESC.sizes=15<>242
+PART.names=Part Number<>Description<>Location<>Qty
+BIKE.sizes=52<>36<>57<>171<>59
+PART_DESC.order=0<>1
+PART.sizes=120<>261<>79<>18
+BIKE.order=0<>1<>2<>3<>4
